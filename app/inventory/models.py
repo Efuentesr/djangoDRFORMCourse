@@ -56,7 +56,7 @@ class ProductPromotionEvent(models.Model):
 class StockManagement(models.Model):
     product = models.OneToOneField(Product, on_delete=models.CASCADE, unique=True)
     quantity = models.IntegerField(default=0)
-    last_checked_at = models.DateTimeField()
+    last_checked_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"Stock for {self.product.name}"
