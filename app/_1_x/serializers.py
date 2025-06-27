@@ -19,3 +19,12 @@ class ProductSerializer(serializers.ModelSerializer):
             "price",
             "is_active",
         ]
+
+
+class ProductNamePriceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = [
+            "name",
+            "price",
+        ]
