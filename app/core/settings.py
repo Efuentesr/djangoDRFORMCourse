@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "module4",
     "module5",
     "module6",
+    "module7",
     "drf_spectacular",
 ]
 
